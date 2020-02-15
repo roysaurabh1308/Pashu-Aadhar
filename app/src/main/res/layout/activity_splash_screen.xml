@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:background="#15B31C"
+    tools:context=".splash_screen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/pashu_aadhar_logo_white"
+        />
+    <TextView
+        android:id="@+id/splashtext"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Pashu-Aadhar"/>
+    <TextView
+        android:id="@+id/bel_tv"
+        android:layout_below="@id/splashtext"
+        android:layout_width="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_alignEnd="@id/splashtext"
+        android:text="Computer Vision in Animal Biometrics.."/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        style="@style/SpinKitView.WanderingCubes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#fff" />
+
+</RelativeLayout>
